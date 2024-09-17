@@ -1,0 +1,26 @@
+﻿<Window x:Class="Task1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Вычислить" HorizontalAlignment="Left" Margin="88,208,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <TextBox x:Name="txt1" TextWrapping="Wrap" Width="120" Margin="82,120,598,275" RenderTransformOrigin="0.88,1.233" Background="#FF72C362"/>
+        <TextBox x:Name="txt2" TextWrapping="Wrap" Width="120" Margin="247,121,433,261" Background="#FFF7DE36"/>
+        <TextBox x:Name="txt3" TextWrapping="Wrap" Width="120" Margin="245,195,435,188" Background="#FFF78902">
+            <UIElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </UIElement.RenderTransform>
+        </TextBox>
+        <TextBlock TextWrapping="Wrap" Margin="68,47,568,336" Foreground="White" Background="#FF8C9B9E"><Run Language="ru-ru" Text="Введите сторону квадрата"/></TextBlock>
+
+    </Grid>
+</Window>
